@@ -8,7 +8,7 @@ lines = []
 with open('palavras.txt') as f:
     lines = f.readlines()
 
-for n in range(0, 5):
+for n in range(0, 10):
     pyautogui.click(379, 21, duration=1)
 
     query = lines[randint(1, 24903)].replace('\n', '').lower()
@@ -23,4 +23,4 @@ for n in range(0, 5):
         sleep(0.5)
     
     pyautogui.click(641, 13, duration=1)
-    sleep(randint(0, 3))
+    sleep(randint(0, 2))
